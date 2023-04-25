@@ -97,6 +97,8 @@ h6 {
 
 .task_bar {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 64px;
   height: 100%;
   background: rgba(0, 0, 0, 0.6666666667);
@@ -104,6 +106,10 @@ h6 {
           backdrop-filter: blur(8px);
 }
 .task_bar__icons {
+  display: flex;
+  flex-direction: column;
+}
+.task_bar__tray {
   display: flex;
   flex-direction: column;
 }
@@ -129,4 +135,24 @@ h6 {
   padding-left: 3px;
   background: rgba(0, 0, 0, 0.6);
   border-left: 3px solid #5294e2;
+}
+
+.tray {
+  padding: 12px;
+}
+.tray__time {
+  margin-top: 24px;
+  color: #ffffff;
+  font-size: 18px;
+}
+.tray__status {
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+.tray__status img {
+  width: 20px;
+  height: 20px;
+}
+.tray__status:hover {
+  background: rgba(0, 0, 0, 0.3333333333);
 }

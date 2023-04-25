@@ -12,12 +12,19 @@
 
 .task_bar {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 64px;
     height: 100%;
     background: #000000aa;
     backdrop-filter: blur(8px);
 
     &__icons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tray {
         display: flex;
         flex-direction: column;
     }
@@ -45,5 +52,26 @@
         padding-left: 3px;
         background: #00000099;
         border-left: 3px solid #5294e2;
+    }
+}
+
+.tray { 
+    padding: 12px;
+    &__time {
+        margin-top: 24px;
+        color: #ffffff;
+        font-size: 18px;
+    }
+    &__status {
+        padding: 6px 10px;
+        border-radius: 6px;
+        img {
+            width: 20px;
+            height: 20px;
+        }
+        &:hover{
+            background: #00000055;
+            
+        }
     }
 }
