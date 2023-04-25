@@ -196,6 +196,12 @@ h6 {
 .terminal__close {
   background: #bf616a;
 }
+.terminal__input {
+  border: none;
+  background: none;
+  font-size: 15px;
+  color: #fff;
+}
 
 .action {
   margin-left: 12px;

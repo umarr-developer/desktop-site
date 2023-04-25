@@ -120,6 +120,13 @@
     &__close {
         background: #bf616a;
     }
+
+    &__input{
+        border: none;
+        background: none;
+        font-size: 15px;
+        color: #fff;
+    }
 }
 
 .action {
