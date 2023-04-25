@@ -93,3 +93,39 @@ h6 {
   background: url("../png/background.png");
   background-size: cover;
 }
+
+.task_bar {
+  display: flex;
+  width: 64px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6666666667);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+.task_bar__icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  padding: 6px;
+  transition-duration: 0.2s;
+}
+.icon img {
+  margin: 6px;
+  width: 40px;
+  height: 40px;
+  transition-duration: 0.1s;
+}
+.icon:hover {
+  background: rgba(0, 0, 0, 0.3333333333);
+  cursor: pointer;
+}
+.icon:active img {
+  transform: scale(0.7);
+}
+.icon__active {
+  padding-left: 3px;
+  background: rgba(0, 0, 0, 0.6);
+  border-left: 3px solid #5294e2;
+}

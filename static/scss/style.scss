@@ -8,3 +8,41 @@
     background: url("../png/background.png");
     background-size: cover;
 }
+
+.task_bar {
+    display: flex;
+    width: 64px;
+    height: 100%;
+    background: #000000aa;
+    backdrop-filter: blur(8px);
+
+    &__icons {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.icon {
+    padding: 6px;
+    transition-duration: 0.2s;
+    img {
+        margin: 6px;
+        width: 40px;
+        height: 40px;
+        transition-duration: 0.1s;
+    }
+
+    &:hover {
+        background: #00000055;
+        cursor: pointer;
+    }
+    &:active img {
+        transform: scale(0.7);
+    }
+
+    &__active {
+        padding-left: 3px;
+        background: #00000099;
+        border-left: 3px solid #5294e2;
+    }
+}
